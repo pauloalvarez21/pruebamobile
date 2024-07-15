@@ -29,7 +29,7 @@ const InicioScreen = ({navigation}) => {
                 data={data}
                 keyExtractor={(id, index) => index.toString()}
                 renderItem={({item}) => (
-                    <View>
+                    <View style={{ justifyContent: 'center'}}>
                         <TouchableOpacity
                             onPress={() => navigation.navigate('detalle', item)}
                         >
@@ -49,7 +49,9 @@ const InicioScreen = ({navigation}) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        justifyContent: 'center',
+        alignContent: 'center'
     }
 });
 
